@@ -4,11 +4,13 @@ import { FooterComponent } from 'src/app/components/layout/footer/footer.compone
 import { NavbarComponent } from 'src/app/components/layout/navbar/navbar.component';
 import { SidebarComponent } from 'src/app/components/layout/sidebar/sidebar.component';
 import { NotificationBellComponent } from 'src/app/components/notification-bell/notification-bell.component';
-import { LoadingComponent } from 'src/app/components/loading/loading.component';
 import { SharedModule } from '../shared/shared.module';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { EffectsModule } from '@ngrx/effects';
 import { CoreEffects } from '../../effects/core.effects';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { CoreRoutingModule } from './core-routing.module';
 
 
 
@@ -21,7 +23,10 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     CommonModule,
+    CoreRoutingModule,
+    FormsModule,
     SharedModule,
+    MatSidenavModule,
     EffectsModule.forFeature([CoreEffects])
   ],
   exports: [

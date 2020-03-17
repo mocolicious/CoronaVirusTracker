@@ -11,7 +11,7 @@ const routes: Routes = [
     },
     {
         path: 'Home',
-        loadChildren: '../covid-19/covid-19.module.ts#Covid19Module'
+        loadChildren: () => import('../covid-19/covid-19.module').then(m => m.Covid19Module)
     },
     {
         path: '**',
