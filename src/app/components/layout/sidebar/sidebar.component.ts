@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-sidebar',
@@ -9,10 +9,10 @@ export class SidebarComponent implements OnInit {
   events: string[] = [];
   opened: boolean;
 
-
   constructor() { }
 
   ngOnInit(): void {
+    this.opened = true;
   }
 
 }

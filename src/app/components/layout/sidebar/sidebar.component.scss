@@ -1,5 +1,6 @@
 mat-sidenav {
     box-shadow: 0 16px 38px -12px rgba(0,0,0,.56), 0 4px 25px 0 rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
+    width: 15em;
 }
 
 mat-sidenav-container {
@@ -7,9 +8,20 @@ mat-sidenav-container {
     max-height: 100%;
 }
 
+mat-icon {
+    font-size: 2.5em;
+    margin-right: 1em;
+}
+
+.iconContainer {
+    display: block;
+    height: 1em;
+}
+
 .logo {
     padding: 15px 0;
     margin: 0;
+    margin-top: 1em;
     display: block;
     position: relative;
     z-index: 4;

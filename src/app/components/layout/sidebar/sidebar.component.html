@@ -1,19 +1,16 @@
 <mat-sidenav-container class="example-container">
-  <mat-sidenav #sidenav mode="side" (opened)="events.push('open!')" (closed)="events.push('close!')">
+  <mat-sidenav #sidenav opened mode="side">
+    <div class="iconContainer">
+      <mat-icon style="float: right;" *ngIf="sidenav.opened" (click)="sidenav.toggle()">toggle_on</mat-icon>
+    </div>
     <div class="logo">
       <a class="simple-text logo-normal">
       COVID-19 Tracker
       </a>
     </div>
-    Sidenav content
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <p><mat-checkbox [(ngModel)]="opened">sidenav.opened</mat-checkbox></p>
-    <p><button mat-button (click)="sidenav.toggle()">sidenav.toggle()</button></p>
-    <p>Events:</p>
-    <div class="example-events">
-      <div *ngFor="let e of events">{{e}}</div>
-    </div>
+    <mat-icon *ngIf="!sidenav.opened" (click)="sidenav.toggle()">toggle_off</mat-icon>
   </mat-sidenav-content>
 </mat-sidenav-container>
