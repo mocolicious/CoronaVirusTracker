@@ -6,6 +6,7 @@ import { SidebarComponent } from 'src/app/components/layout/sidebar/sidebar.comp
 import { NotificationBellComponent } from 'src/app/components/notification-bell/notification-bell.component';
 import { SharedModule } from '../shared/shared.module';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import { EffectsModule } from '@ngrx/effects';
 import { CoreEffects } from '../../effects/core.effects';
@@ -28,6 +29,7 @@ import { CoreRoutingModule } from './core-routing.module';
     FormsModule,
     SharedModule,
     MatSidenavModule,
+    MatDividerModule,
     MatIconModule,
     EffectsModule.forFeature([CoreEffects])
   ],
