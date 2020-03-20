@@ -7,6 +7,7 @@ import { NotificationBellComponent } from 'src/app/components/notification-bell/
 import { SharedModule } from '../shared/shared.module';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatCardModule, MatCard } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { EffectsModule } from '@ngrx/effects';
 import { CoreEffects } from '../../effects/core.effects';
@@ -30,11 +31,13 @@ import { CoreRoutingModule } from './core-routing.module';
     SharedModule,
     MatSidenavModule,
     MatDividerModule,
+    MatCardModule,
     MatIconModule,
     EffectsModule.forFeature([CoreEffects])
   ],
   exports: [
     RouterModule,
+    MatCardModule,
     FooterComponent,
     NavbarComponent,
     SidebarComponent,

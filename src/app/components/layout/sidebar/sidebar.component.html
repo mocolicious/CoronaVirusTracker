@@ -13,5 +13,6 @@
 
   <mat-sidenav-content>
     <mat-icon *ngIf="!sidenav.opened" (click)="sidenav.toggle()">toggle_off</mat-icon>
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
