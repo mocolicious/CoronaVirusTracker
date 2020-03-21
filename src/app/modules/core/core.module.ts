@@ -29,15 +29,9 @@ import { CoreRoutingModule } from './core-routing.module';
     CoreRoutingModule,
     FormsModule,
     SharedModule,
-    MatSidenavModule,
-    MatDividerModule,
-    MatCardModule,
-    MatIconModule,
     EffectsModule.forFeature([CoreEffects])
   ],
   exports: [
-    RouterModule,
-    MatCardModule,
     FooterComponent,
     NavbarComponent,
     SidebarComponent,

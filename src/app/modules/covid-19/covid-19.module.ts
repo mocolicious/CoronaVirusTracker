@@ -25,7 +25,6 @@ import { GraphComponent } from 'src/app/components/graph/graph.component';
   ],
   imports: [
     CommonModule,
-    CoreModule,
     SharedModule,
     Covid19RoutingModule
   ],
