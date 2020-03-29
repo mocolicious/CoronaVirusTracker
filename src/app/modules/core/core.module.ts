@@ -5,13 +5,8 @@ import { NavbarComponent } from 'src/app/components/layout/navbar/navbar.compone
 import { SidebarComponent } from 'src/app/components/layout/sidebar/sidebar.component';
 import { NotificationBellComponent } from 'src/app/components/notification-bell/notification-bell.component';
 import { SharedModule } from '../shared/shared.module';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatDividerModule } from '@angular/material/divider';
-import { MatCardModule, MatCard } from '@angular/material/card';
-import { MatIconModule } from '@angular/material/icon';
 import { EffectsModule } from '@ngrx/effects';
 import { CoreEffects } from '../../effects/core.effects';
-import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { CoreRoutingModule } from './core-routing.module';
 
