@@ -9,7 +9,9 @@ import { Observable } from 'rxjs';
 import { finalize, delay } from 'rxjs/operators'
 import { BusyService } from '../services/busy.service';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class BusyInterceptor implements HttpInterceptor {
 
   constructor(private busyService: BusyService) {}
